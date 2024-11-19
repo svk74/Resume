@@ -8,7 +8,7 @@
   }
   body {
     height: 100%;
-    font-family: Manrope, Verdana, Tahoma, sans-serif;    
+    font-family: Manrope, Tahoma, sans-serif;    
     line-height: 1.5em;
     font-size: var(--main-font-size);    
     color: var(--main-font-color);  
@@ -56,9 +56,14 @@
     text-align: left;
     padding-left: 10px; 
   }
-  .profile-icon {
+  .profile-icon-left {
     max-width: 16px;
+    margin-right: 5px;
   }
+  .profile-icon-right {
+    max-width: 16px;
+    margin-left: 10px; 
+  }  
   .profile-print {     
     position: absolute;
     bottom: 2%;
