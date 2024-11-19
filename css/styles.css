@@ -1,0 +1,120 @@
+  :root {
+    --main-font-color: DarkSlateGray;
+    --print-font-color: black;
+    --link-font-color: royalblue;
+  /*  --name-font-size: 20;*/
+    --main-font-size: 16;
+    --print-font-size: 14;    
+  }
+  body {
+    height: 100%;
+    font-family: Manrope, Verdana, Tahoma, sans-serif;    
+    line-height: 1.5em;
+    font-size: var(--main-font-size);    
+    color: var(--main-font-color);  
+    background: white;   
+  }
+  h1, h2, h3, h4 {
+    font-weight: normal;
+  }
+  a {
+    color: var(--link-font-color);    
+    text-decoration: none;
+  }
+  a:hover {  
+    color: firebrick;
+  }
+  abbr {
+    text-decoration: none;
+    color: var(--link-font-color);
+  }
+  .resume {  
+    display: flex; 
+  }  
+  .profile {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;    
+    width: 280px;
+    height: 99%;
+    text-align: center;
+    background: azure;
+    padding: 10px;
+  }
+  .profile-picture img {    
+    width: 90%;
+    padding-top: 10px;    
+  }
+  .profile-name {    
+    text-align: center;     
+  }
+  .profile-night {
+    color: darkred;
+    font-size: 10px;
+  }
+  .profile-info {       
+    text-align: left;
+    padding-left: 10px; 
+  }
+  .profile-icon {
+    max-width: 16px;
+  }
+  .profile-print {     
+    position: absolute;
+    bottom: 2%;
+  } 
+  .main {
+    float: left;
+    text-align: justify;
+    background: white;
+    width: 60%;
+    margin-left: 280px;
+    padding-left: 2%;
+  }
+  .main-supref {
+    text-decoration: none;    
+    vertical-align: super;
+    font-size: 60%;
+    line-height: 1em;
+  }
+  .main-footer {
+    font-size: 70%;
+  }
+  .cloud {
+    width: 10%;
+    height: 100%;
+    float: left;
+    background: white;    
+    text-align: center;
+    padding: 20px;
+  }
+  @media print {   
+    .resume {  
+      font-family: Times, Times New Roman, serif; 
+      font-size: var(--print-font-size);
+      color: var(--print-font-color);
+      width: 210mm;
+      height: 297mm;
+      margin: 0;
+    }
+    .profile {   
+      background: white;
+      padding: 10px;
+    }
+    .profile-night {
+      visibility: hidden;
+    }
+    .profile-print {
+      visibility: hidden;
+    }
+    .profile a {
+      color: var(--print-font-color);
+    }
+    .main {
+      width: fit-content;
+      padding: 5px;
+    }
+    .cloud {
+      visibility: hidden;
+    }
+    }
