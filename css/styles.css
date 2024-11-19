@@ -4,7 +4,9 @@
     --link-font-color: royalblue;
   /*  --name-font-size: 20;*/
     --main-font-size: 16;
-    --print-font-size: 14;    
+    --print-font-size: 14;
+    --profile-width-landscape: 280px;
+    --profile-width-print: 210px;
   }
   body {
     height: 100%;
@@ -35,7 +37,7 @@
     box-sizing: border-box;
     position: fixed;
     top: 0;    
-    width: 280px;
+    width: var(--profile-width-landscape);
     height: 99%;
     text-align: center;
     background: azure;
@@ -62,7 +64,7 @@
   }
   .profile-icon-right {
     max-width: 16px;
-    margin-left: 10px; 
+    margin-left: 5px; 
   }  
   .profile-print {     
     position: absolute;
@@ -73,7 +75,7 @@
     text-align: justify;
     background: white;
     width: 60%;
-    margin-left: 280px;
+    margin-left: var(--profile-width-landscape);
     padding-left: 2%;
   }
   .main-supref {
@@ -104,7 +106,9 @@
     }
     .profile {   
       background: white;
-      padding: 10px;
+      padding: 5px;
+      width: var(--profile-width-print);
+      height: 90%;
     }
     .profile-night {
       visibility: hidden;
@@ -116,8 +120,10 @@
       color: var(--print-font-color);
     }
     .main {
-      width: fit-content;
-      padding: 5px;
+      width: 100%;
+      padding: 10px;
+      margin-left: var(--profile-width-print);  
+      height: 99%;  
     }
     .cloud {
       visibility: hidden;
