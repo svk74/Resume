@@ -2,10 +2,9 @@
     --main-font-color: DarkSlateGray;
     --print-font-color: black;
     --link-font-color: royalblue;
-  /*  --name-font-size: 20;*/
     --main-font-size: 16;
     --print-font-size: 14;
-    --profile-width-landscape: 280px;
+    --profile-width-landscape: 270px;
     --profile-width-print: 210px;
   }
   body {
@@ -78,6 +77,9 @@
     margin-left: var(--profile-width-landscape);
     padding-left: 2%;
   }
+  .samples {
+    display:inline-block;
+  }
   .main-supref {
     text-decoration: none;    
     vertical-align: super;
@@ -86,14 +88,6 @@
   }
   .main-footer {
     font-size: 70%;
-  }
-  .cloud {
-    width: 10%;
-    height: 100%;
-    float: left;
-    background: white;    
-    text-align: center;
-    padding: 20px;
   }
   @media print {   
     .resume {  
@@ -104,11 +98,13 @@
       height: 297mm;
       margin: 0;
     }
-    .profile {   
-      background: white;
+    .profile {
+      position: relative;
+      float: left;
+      /*background: white;*/
       padding: 5px;
-      width: var(--profile-width-print);
-      height: 90%;
+      width: 30%;
+      height: 99%;
     }
     .profile-night {
       visibility: hidden;
@@ -119,13 +115,12 @@
     .profile a {
       color: var(--print-font-color);
     }
-    .main {
-      width: 100%;
-      padding: 10px;
-      margin-left: var(--profile-width-print);  
-      height: 99%;  
-    }
-    .cloud {
+    .samples {
       visibility: hidden;
+    }
+    .main {
+      margin-left: 0;
+      width: 70%;
+      padding: 10px;  
     }
     }
