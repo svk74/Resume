@@ -44,7 +44,7 @@ This is a normal paragraph.
 
 Используйте [Markdown Converter](https://products.aspose.app/html/ru/conversion/md) для преобразования файлов Markdown.
 
-<qwerty@abc.com>
+<mailto:qwerty@abc.com>
 
  [![Text "Banner MD to PDF Converter"](/html/images/banner/md-to-pdf.png)](https://products.aspose.app/html/ru/conversion/md-to-pdf)
 
